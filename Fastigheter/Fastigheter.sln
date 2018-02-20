@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fastigheter", "Fastigheter\Fastigheter.csproj", "{AA456B8B-67E1-4135-9255-BD49447B7EBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA456B8B-67E1-4135-9255-BD49447B7EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA456B8B-67E1-4135-9255-BD49447B7EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA456B8B-67E1-4135-9255-BD49447B7EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA456B8B-67E1-4135-9255-BD49447B7EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49896E9D-C3E4-4847-8AE3-C87003993F78}
+	EndGlobalSection
+EndGlobal
