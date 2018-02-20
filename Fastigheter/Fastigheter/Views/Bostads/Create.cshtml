@@ -16,9 +16,13 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.FastighetId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <!-- //TM #10a LabelFor-raden ska se ut enligt nedan -->
+            @Html.LabelFor(model => model.FastighetId, "Fastighet", htmlAttributes: new { @class = "control-label col-md-2" })
+
             <div class="col-md-10">
-                @Html.EditorFor(model => model.FastighetId, new { htmlAttributes = new { @class = "form-control" } })
+                <!-- //TM #10b Här ska man ha DropDownList isf. EditorFor, enligt nedan -->
+                @Html.DropDownList("DoIt", null, htmlAttributes: new { @class = "form-control" })
+
                 @Html.ValidationMessageFor(model => model.FastighetId, "", new { @class = "text-danger" })
             </div>
         </div>

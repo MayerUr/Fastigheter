@@ -17,7 +17,11 @@ namespace Fastigheter.Controllers
         // GET: Bostads
         public ActionResult Index()
         {
-            return View(db.Bostads.ToList());
+            //TM #11a Raden nedan ska läggas in
+            var flats = db.Bostads.Include(e => e.Fastighet);
+
+            //TM #11b Return-raden ska se ut enligt nedan 
+            return View(flats.ToList());
         }
 
         // GET: Bostads/Details/5
@@ -38,6 +42,9 @@ namespace Fastigheter.Controllers
         // GET: Bostads/Create
         public ActionResult Create()
         {
+            //TM #12 Raden nedan ska läggas in
+            ViewBag.DoIt = new SelectList(db.Fastighets, "Id", "Gatuadress");
+
             return View();
         }
 
@@ -55,6 +62,9 @@ namespace Fastigheter.Controllers
                 return RedirectToAction("Index");
             }
 
+            //TM #13 Raden nedan ska läggas in (OBS!!! Identisk med raden efter //TM #12!)
+            ViewBag.DoIt = new SelectList(db.Fastighets, "Id", "Gatuadress");
+
             return View(bostad);
         }
 
@@ -70,6 +80,9 @@ namespace Fastigheter.Controllers
             {
                 return HttpNotFound();
             }
+            //TM #14 Raden nedan ska läggas in (OBS!!! Identisk med raden efter //TM #12 och //TM #13!)
+            ViewBag.DoIt = new SelectList(db.Fastighets, "Id", "Gatuadress");
+
             return View(bostad);
         }
 
@@ -86,6 +99,9 @@ namespace Fastigheter.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            //TM #15 Raden nedan ska läggas in (OBS!!! Identisk med raden efter //TM #12, //TM #13 och //TM #14!)
+            ViewBag.DoIt = new SelectList(db.Fastighets, "Id", "Gatuadress");
+
             return View(bostad);
         }
 

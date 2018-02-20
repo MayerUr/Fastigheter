@@ -158,6 +158,27 @@
     <Compile Include="Migrations\201802200924290_Seeds.Designer.cs">
       <DependentUpon>201802200924290_Seeds.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802201150421_Html.DropDownList för fastigheter i View\Bostads\Create.cs" />
+    <Compile Include="Migrations\201802201223080_Kod för fälthantering av en kopplad tabell i CRUD-hantering.cs" />
+    <Compile Include="Migrations\201802201223080_Kod för fälthantering av en kopplad tabell i CRUD-hantering.Designer.cs">
+      <DependentUpon>201802201223080_Kod för fälthantering av en kopplad tabell i CRUD-hantering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802201246351_Nödvändiga ändringar.cs" />
+    <Compile Include="Migrations\201802201246351_Nödvändiga ändringar.Designer.cs">
+      <DependentUpon>201802201246351_Nödvändiga ändringar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802201333542_Efter borttagning av duplikat i Seed.cs" />
+    <Compile Include="Migrations\201802201333542_Efter borttagning av duplikat i Seed.Designer.cs">
+      <DependentUpon>201802201333542_Efter borttagning av duplikat i Seed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802201344256_Fastighet isf. FastighetId.cs" />
+    <Compile Include="Migrations\201802201344256_Fastighet isf. FastighetId.Designer.cs">
+      <DependentUpon>201802201344256_Fastighet isf. FastighetId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802201357409_4 bostäder i 2 fastigheter med nr. 1-4.cs" />
+    <Compile Include="Migrations\201802201357409_4 bostäder i 2 fastigheter med nr. 1-4.Designer.cs">
+      <DependentUpon>201802201357409_4 bostäder i 2 fastigheter med nr. 1-4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bostad.cs" />
     <Compile Include="Models\Fastighet.cs" />
@@ -231,6 +252,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201802200924290_Seeds.resx">
       <DependentUpon>201802200924290_Seeds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802201223080_Kod för fälthantering av en kopplad tabell i CRUD-hantering.resx">
+      <DependentUpon>201802201223080_Kod för fälthantering av en kopplad tabell i CRUD-hantering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802201246351_Nödvändiga ändringar.resx">
+      <DependentUpon>201802201246351_Nödvändiga ändringar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802201333542_Efter borttagning av duplikat i Seed.resx">
+      <DependentUpon>201802201333542_Efter borttagning av duplikat i Seed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802201344256_Fastighet isf. FastighetId.resx">
+      <DependentUpon>201802201344256_Fastighet isf. FastighetId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802201357409_4 bostäder i 2 fastigheter med nr. 1-4.resx">
+      <DependentUpon>201802201357409_4 bostäder i 2 fastigheter med nr. 1-4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

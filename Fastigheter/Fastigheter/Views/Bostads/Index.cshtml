@@ -12,7 +12,8 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.FastighetId)
+            <!-- //TM #16a DisplayNameFor-raden ska se ut enligt nedan -->
+            @Html.DisplayNameFor(model => model.Fastighet.Gatuadress)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Nummer)
@@ -23,7 +24,8 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.FastighetId)
+            <!-- //TM #16b DisplayNameFor-raden ska se ut enligt nedan -->
+            @Html.DisplayFor(modelItem => item.Fastighet.Gatuadress)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Nummer)
@@ -35,5 +37,12 @@
         </td>
     </tr>
 }
+
+<!-- //TM #16c Nu ska man spara all sin kod... -->
+<!-- //TM #16d ... göra en Build -->
+<!-- //TM #16e ... och köra Add-Migration och Update-Database direkt därefter! -->
+
+
+
 
 </table>

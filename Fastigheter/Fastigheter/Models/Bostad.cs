@@ -16,6 +16,12 @@ namespace Fastigheter.Models
         public int Id { get; set; }
 
         public int FastighetId { get; set; }
+
+        //TM #09a OBS! Navigational property!
+        //TM #09b Behövs för att kunna hantera dropdown-listor i vyer
+        //TM #09c Skapas genom att definieras som 'virtual'
+        public virtual Fastighet Fastighet { get; set; }
+
         public int Nummer { get; set; }
     }
 }

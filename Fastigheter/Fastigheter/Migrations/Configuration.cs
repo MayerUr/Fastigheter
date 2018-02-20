@@ -37,8 +37,7 @@ namespace Fastigheter.Migrations
                 unik => unik.Gatuadress,
 
                 new Fastighet { Gatuadress = "Fäbodvägen 9", Land = "SE", Postnummer = 14233, Postort = "Skogås" },
-                new Fastighet { Gatuadress = "Tartsay ltp. 48.", Land = "HU", Postnummer = 7100, Postort = "Skogås" },
-                new Fastighet { Gatuadress = "Fäbodvägen 9", Land = "SE", Postnummer = 14233, Postort = "Skogås" }
+                new Fastighet { Gatuadress = "Tartsay ltp. 48.", Land = "HU", Postnummer = 7100, Postort = "Skogås" }
                 );
 
             context.Bostads.AddOrUpdate(
@@ -46,10 +45,8 @@ namespace Fastigheter.Migrations
 
                 new Bostad { FastighetId = 1, Nummer = 1 },
                 new Bostad { FastighetId = 1, Nummer = 2 },
-                new Bostad { FastighetId = 2, Nummer = 1 },
-                new Bostad { FastighetId = 2, Nummer = 2 },
-                new Bostad { FastighetId = 3, Nummer = 1 },
-                new Bostad { FastighetId = 3, Nummer = 2 }
+                new Bostad { FastighetId = 2, Nummer = 3 },
+                new Bostad { FastighetId = 2, Nummer = 4 }
                 );
 
             //TM #07a Efter att seedingsraderna har lagts in för alla relevanta klasser/tabeller, ska man spara sin kod och därefter köra kommandona Add-Migration 'valfritt migrationsnamn' och Update-Database i Package Manager Console.
